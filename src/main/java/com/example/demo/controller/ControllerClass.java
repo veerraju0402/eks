@@ -28,6 +28,7 @@ public class ControllerClass {
 	@GetMapping("/")
 	@Hidden
 	public void redirecting(HttpServletResponse response) throws IOException {
+		System.out.println("Swagger call");
 		response.sendRedirect("/swagger-ui.html");
 	}
 
