@@ -24,20 +24,19 @@ public class ControllerClass {
 	ServiceClass serviceClass;
 	@Autowired
 	private ApplicationContext applicationContext;
-	
-	
-    @GetMapping("/")
-    @Hidden
-    public void redirecting(HttpServletResponse response) throws IOException {
-        response.sendRedirect("/swagger-ui.html");
-    }
 
-    @GetMapping("/now")
-    public Date dkd(){
-    	Date testBean = (Date) applicationContext.getBean("date");
-    	System.out.println("testBean:"+testBean);
-    	return testBean;
-    }
+	@GetMapping("/")
+	@Hidden
+	public void redirecting(HttpServletResponse response) throws IOException {
+		response.sendRedirect("/swagger-ui.html");
+	}
+
+	@GetMapping("/now")
+	public Date dkd() {
+		Date testBean = (Date) applicationContext.getBean("date");
+		System.out.println("testBean:" + testBean);
+		return testBean;
+	}
 
 	@GetMapping(value = "/msg")
 	public String welCome() {

@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.javatechie.SpringBootEksApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.218 s -- in com.javatechie.SpringBootEksApplicationTests
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.336 s -- in com.javatechie.SpringBootEksApplicationTests
